@@ -28,172 +28,190 @@ public class MainActivity extends AppCompatActivity {
     public void makeMove1(View view){
         TextView textView = findViewById(R.id.textView);
         Button button = findViewById(R.id.button1);
-        if(!isGameOver() && !isWin()) {
-            if (isX) {
-                button.setText("X");
-                textView.setText("Player O's turn");
-                moves[0][0] = "X";
-            } else {
-                button.setText("O");
-                textView.setText("Player X's turn");
-                moves[0][0] = "O";
+        if(moves[0][0].equals(" ")) {
+            if (!isGameOver() && !isWin()) {
+                if (isX) {
+                    button.setText("X");
+                    textView.setText("Player O's turn");
+                    moves[0][0] = "X";
+                } else {
+                    button.setText("O");
+                    textView.setText("Player X's turn");
+                    moves[0][0] = "O";
+                }
             }
+            isX = !isX;
+            isGameOver();
+            isWin();
         }
-        isX = !isX;
-        isGameOver();
-        isWin();
     }
     public void makeMove2(View view){
         TextView textView = findViewById(R.id.textView);
         //textView.setText("Player O's turn");
         Button button = findViewById(R.id.button2);
-        if(!isGameOver() && !isWin()) {
-            if (isX) {
-                button.setText("X");
-                textView.setText("Player O's turn");
-                moves[0][1] = "X";
-            } else {
-                button.setText("O");
-                textView.setText("Player X's turn");
-                moves[0][1] = "O";
+        if(moves[0][1].equals(" ")) {
+            if (!isGameOver() && !isWin()) {
+                if (isX) {
+                    button.setText("X");
+                    textView.setText("Player O's turn");
+                    moves[0][1] = "X";
+                } else {
+                    button.setText("O");
+                    textView.setText("Player X's turn");
+                    moves[0][1] = "O";
+                }
             }
+            isX = !isX;
+            isGameOver();
+            isWin();
         }
-        isX = !isX;
-        isGameOver();
-        isWin();
     }
     public void makeMove3(View view){
         TextView textView = findViewById(R.id.textView);
         //textView.setText("Player O's turn");
         Button button = findViewById(R.id.button3);
-        if(!isGameOver() && !isWin()) {
-            if (isX) {
-                button.setText("X");
-                textView.setText("Player O's turn");
-                moves[0][2] = "X";
-            } else {
-                button.setText("O");
-                textView.setText("Player X's turn");
-                moves[0][2] = "O";
+        if(moves[0][2].equals(" ")) {
+            if (!isGameOver() && !isWin()) {
+                if (isX) {
+                    button.setText("X");
+                    textView.setText("Player O's turn");
+                    moves[0][2] = "X";
+                } else {
+                    button.setText("O");
+                    textView.setText("Player X's turn");
+                    moves[0][2] = "O";
+                }
             }
+            isX = !isX;
+            isGameOver();
+            isWin();
         }
-        isX = !isX;
-        isGameOver();
-        isWin();
     }
     public void makeMove4(View view){
         TextView textView = findViewById(R.id.textView);
         //textView.setText("Player O's turn");
         Button button = findViewById(R.id.button4);
-        if(!isGameOver() && !isWin()) {
-            if (isX) {
-                button.setText("X");
-                textView.setText("Player O's turn");
-                moves[1][0] = "X";
-            } else {
-                button.setText("O");
-                textView.setText("Player X's turn");
-                moves[1][0] = "O";
+        if(moves[1][0].equals(" ")) {
+            if (!isGameOver() && !isWin()) {
+                if (isX) {
+                    button.setText("X");
+                    textView.setText("Player O's turn");
+                    moves[1][0] = "X";
+                } else {
+                    button.setText("O");
+                    textView.setText("Player X's turn");
+                    moves[1][0] = "O";
+                }
             }
+            isX = !isX;
+            isGameOver();
+            isWin();
         }
-        isX = !isX;
-        isGameOver();
-        isWin();
     }
     public void makeMove5(View view){
         TextView textView = findViewById(R.id.textView);
         //textView.setText("Player O's turn");
         Button button = findViewById(R.id.button5);
-        if(!isGameOver() && !isWin()) {
-            if (isX) {
-                button.setText("X");
-                textView.setText("Player O's turn");
-                moves[1][1] = "X";
-            } else {
-                button.setText("O");
-                textView.setText("Player X's turn");
-                moves[1][1] = "O";
+        if(moves[1][1].equals(" ")) {
+            if (!isGameOver() && !isWin()) {
+                if (isX) {
+                    button.setText("X");
+                    textView.setText("Player O's turn");
+                    moves[1][1] = "X";
+                } else {
+                    button.setText("O");
+                    textView.setText("Player X's turn");
+                    moves[1][1] = "O";
+                }
             }
+            isX = !isX;
+            isGameOver();
+            isWin();
         }
-        isX = !isX;
-        isGameOver();
-        isWin();
     }
     public void makeMove6(View view){
         TextView textView = findViewById(R.id.textView);
         //textView.setText("Player O's turn");
         Button button = findViewById(R.id.button6);
-        if(!isGameOver() && !isWin()) {
-            if (isX) {
-                button.setText("X");
-                textView.setText("Player O's turn");
-                moves[1][2] = "X";
-            } else {
-                button.setText("O");
-                textView.setText("Player X's turn");
-                moves[1][2] = "O";
+        if(moves[1][2].equals(" ")) {
+            if (!isGameOver() && !isWin()) {
+                if (isX) {
+                    button.setText("X");
+                    textView.setText("Player O's turn");
+                    moves[1][2] = "X";
+                } else {
+                    button.setText("O");
+                    textView.setText("Player X's turn");
+                    moves[1][2] = "O";
+                }
             }
+            isX = !isX;
+            isGameOver();
+            isWin();
         }
-        isX = !isX;
-        isGameOver();
-        isWin();
     }
     public void makeMove7(View view){
         TextView textView = findViewById(R.id.textView);
         //textView.setText("Player O's turn");
         Button button = findViewById(R.id.button7);
-        if(!isGameOver() && !isWin()) {
-            if (isX) {
-                button.setText("X");
-                textView.setText("Player O's turn");
-                moves[2][0] = "X";
-            } else {
-                button.setText("O");
-                textView.setText("Player X's turn");
-                moves[2][0] = "O";
+        if(moves[2][0].equals(" ")) {
+            if (!isGameOver() && !isWin()) {
+                if (isX) {
+                    button.setText("X");
+                    textView.setText("Player O's turn");
+                    moves[2][0] = "X";
+                } else {
+                    button.setText("O");
+                    textView.setText("Player X's turn");
+                    moves[2][0] = "O";
+                }
             }
+            isX = !isX;
+            isGameOver();
+            isWin();
         }
-        isX = !isX;
-        isGameOver();
-        isWin();
     }
     public void makeMove8(View view){
         TextView textView = findViewById(R.id.textView);
         //textView.setText("Player O's turn");
         Button button = findViewById(R.id.button8);
-        if(!isGameOver() && !isWin()) {
-            if (isX) {
-                button.setText("X");
-                textView.setText("Player O's turn");
-                moves[2][1] = "X";
-            } else {
-                button.setText("O");
-                textView.setText("Player X's turn");
-                moves[2][1] = "O";
+        if(moves[2][1].equals(" ")) {
+            if (!isGameOver() && !isWin()) {
+                if (isX) {
+                    button.setText("X");
+                    textView.setText("Player O's turn");
+                    moves[2][1] = "X";
+                } else {
+                    button.setText("O");
+                    textView.setText("Player X's turn");
+                    moves[2][1] = "O";
+                }
             }
+            isX = !isX;
+            isGameOver();
+            isWin();
         }
-        isX = !isX;
-        isGameOver();
-        isWin();
     }
     public void makeMove9(View view){
         TextView textView = findViewById(R.id.textView);
         //textView.setText("Player O's turn");
         Button button = findViewById(R.id.button9);
-        if(!isGameOver() && !isWin()) {
-            if (isX) {
-                button.setText("X");
-                textView.setText("Player O's turn");
-                moves[2][2] = "X";
-            } else {
-                button.setText("O");
-                textView.setText("Player X's turn");
-                moves[2][2] = "O";
+        if(moves[2][2].equals(" ")) {
+            if (!isGameOver() && !isWin()) {
+                if (isX) {
+                    button.setText("X");
+                    textView.setText("Player O's turn");
+                    moves[2][2] = "X";
+                } else {
+                    button.setText("O");
+                    textView.setText("Player X's turn");
+                    moves[2][2] = "O";
+                }
             }
+            isX = !isX;
+            isGameOver();
+            isWin();
         }
-        isX = !isX;
-        isGameOver();
-        isWin();
     }
     //returns true if board is full only
     public boolean isGameOver(){

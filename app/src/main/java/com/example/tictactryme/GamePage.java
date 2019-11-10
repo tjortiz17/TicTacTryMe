@@ -50,8 +50,6 @@ public class GamePage extends AppCompatActivity {
 
     //button click method v2, shows an X or O depending on turn on click
     public void makeMove1(View view){
-        // TextView textView = findViewById(R.id.textView);
-        // Button button = findViewById(R.id.button1);
         if(moves[0][0].equals(" ")) {
             if (!isGameOver() && !isWin()) {
                 if (isX) {
@@ -71,9 +69,6 @@ public class GamePage extends AppCompatActivity {
         }
     }
     public void makeMove2(View view){
-        //TextView textView = findViewById(R.id.textView);
-        //textView.setText("Player O's turn");
-        // Button button = findViewById(R.id.button2);
         if(moves[0][1].equals(" ")) {
             if (!isGameOver() && !isWin()) {
                 if (isX) {
@@ -93,9 +88,6 @@ public class GamePage extends AppCompatActivity {
         }
     }
     public void makeMove3(View view){
-        //TextView textView = findViewById(R.id.textView);
-        //textView.setText("Player O's turn");
-        //Button button = findViewById(R.id.button3);
         if(moves[0][2].equals(" ")) {
             if (!isGameOver() && !isWin()) {
                 if (isX) {
@@ -115,9 +107,6 @@ public class GamePage extends AppCompatActivity {
         }
     }
     public void makeMove4(View view){
-        //TextView textView = findViewById(R.id.textView);
-        //textView.setText("Player O's turn");
-        //Button button = findViewById(R.id.button4);
         if(moves[1][0].equals(" ")) {
             if (!isGameOver() && !isWin()) {
                 if (isX) {
@@ -137,9 +126,6 @@ public class GamePage extends AppCompatActivity {
         }
     }
     public void makeMove5(View view){
-        //TextView textView = findViewById(R.id.textView);
-        //textView.setText("Player O's turn");
-        //Button button = findViewById(R.id.button5);
         if(moves[1][1].equals(" ")) {
             if (!isGameOver() && !isWin()) {
                 if (isX) {
@@ -159,9 +145,6 @@ public class GamePage extends AppCompatActivity {
         }
     }
     public void makeMove6(View view){
-        //TextView textView = findViewById(R.id.textView);
-        //textView.setText("Player O's turn");
-        //Button button = findViewById(R.id.button6);
         if(moves[1][2].equals(" ")) {
             if (!isGameOver() && !isWin()) {
                 if (isX) {
@@ -181,9 +164,6 @@ public class GamePage extends AppCompatActivity {
         }
     }
     public void makeMove7(View view){
-        //TextView textView = findViewById(R.id.textView);
-        //textView.setText("Player O's turn");
-        //Button button = findViewById(R.id.button7);
         if(moves[2][0].equals(" ")) {
             if (!isGameOver() && !isWin()) {
                 if (isX) {
@@ -203,9 +183,6 @@ public class GamePage extends AppCompatActivity {
         }
     }
     public void makeMove8(View view){
-        //TextView textView = findViewById(R.id.textView);
-        //textView.setText("Player O's turn");
-        //Button button = findViewById(R.id.button8);
         if(moves[2][1].equals(" ")) {
             if (!isGameOver() && !isWin()) {
                 if (isX) {
@@ -225,9 +202,6 @@ public class GamePage extends AppCompatActivity {
         }
     }
     public void makeMove9(View view){
-        //TextView textView = findViewById(R.id.textView);
-        //textView.setText("Player O's turn");
-        //Button button = findViewById(R.id.button9);
         if(moves[2][2].equals(" ")) {
             if (!isGameOver() && !isWin()) {
                 if (isX) {

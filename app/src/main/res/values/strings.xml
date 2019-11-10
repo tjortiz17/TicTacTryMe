@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">Tic Tac Try Me</string>
     <string name="game_text">Player X\'s turn</string>
-    <string name="game_button">X</string>
+    <string name="newgame_button">New Game</string>
 </resources>

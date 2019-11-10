@@ -2,6 +2,7 @@ package com.example.tictactryme;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -246,7 +247,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    //v1 of computer player move
+    //computer player AI move
     public void computerMove(){
         int highVal = -1000;
         int row = -1;
@@ -610,5 +611,9 @@ public class MainActivity extends AppCompatActivity {
         return false;
     }
 
-    //checks if computer player has a
+    //starts a new game
+    public void newGame(View view){
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
 }

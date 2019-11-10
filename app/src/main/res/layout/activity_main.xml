@@ -6,141 +6,39 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginStart="56dp"
-        android:layout_marginLeft="56dp"
-        android:layout_marginTop="24dp"
-        android:onClick="makeMove1"
-        android:textSize="60sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="24dp"
-        android:onClick="makeMove2"
-        android:textSize="60sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/button1"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="56dp"
-        android:layout_marginRight="56dp"
-        android:onClick="makeMove3"
-        android:textSize="60sp"
-        android:textStyle="bold"
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="@string/start_title"
+        android:textSize="36sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/button2"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginStart="56dp"
-        android:layout_marginLeft="56dp"
-        android:onClick="makeMove4"
-        android:textSize="60sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button1" />
-
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:onClick="makeMove5"
-        android:textSize="60sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/button6"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/button4"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
-
-    <Button
-        android:id="@+id/button6"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginEnd="56dp"
-        android:layout_marginRight="56dp"
-        android:onClick="makeMove6"
-        android:textSize="60sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button3" />
-
-    <Button
-        android:id="@+id/button7"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginStart="56dp"
-        android:layout_marginLeft="56dp"
-        android:onClick="makeMove7"
-        android:textSize="60sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button4" />
-
-    <Button
-        android:id="@+id/button8"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:onClick="makeMove8"
-        android:textSize="60sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/button7"
-        app:layout_constraintTop_toBottomOf="@+id/button5" />
-
-    <Button
-        android:id="@+id/button9"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginEnd="56dp"
-        android:layout_marginRight="56dp"
-        android:onClick="makeMove9"
-        android:textSize="60sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button8"
-        app:layout_constraintTop_toBottomOf="@+id/button6" />
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="0dp"
-        android:layout_height="78dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginBottom="128dp"
-        android:text="@string/game_text"
-        android:textSize="36sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/good_luck_text"
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <Button
-        android:id="@+id/button10"
-        android:layout_width="0dp"
+        android:id="@+id/button11"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="64dp"
-        android:onClick="newGame"
-        android:text="@string/newgame_button"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="32dp"
+        android:onClick="startGame"
+        android:text="@string/startgame_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 </androidx.constraintlayout.widget.ConstraintLayout>
